@@ -302,6 +302,9 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += libavservices_minijail.vendor
 
+# MIthorium HALs
+$(call inherit-product, hardware/mithorium-4.19/mithorium_qcom_hals.mk)
+
 # MSM IRQ Balancer
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/msm_irqbalance.conf:$(TARGET_COPY_OUT_VENDOR)/etc/msm_irqbalance.conf
